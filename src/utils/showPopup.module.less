@@ -1,0 +1,30 @@
+@import url('@/styles/mixin.less');
+@import url('@/styles/var.less');
+.message{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .self-center(absolute);
+    font-size: 50px;
+    white-space: nowrap;
+    color: black;
+    border:5px dashed;
+    opacity: 0;
+    transition: 0.5s;
+    
+
+    &-info{
+        background: @gray;
+    };
+    &-danger{
+        background: @danger;
+    };
+    &-success{
+        background: @success;
+    };
+    &-warn{
+        background: @warn;
+    }
+    
+}
